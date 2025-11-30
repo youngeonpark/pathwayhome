@@ -24,22 +24,65 @@
     border: 1px solid rgba(221, 221, 221, 0.8);
     box-shadow: 2px 4px 8px 0.2px #DDDDDD;
     border-radius: 50px;
+    position: relative;
 }
 
-.regcount-selector .base {
+.selectpg .regcount-selector .base {
     width: 100%;
     display: flex;
     /* padding: 5px; */
     justify-content: space-around;
 }
 
-.regcount-selector .base span {
+.selectpg .regcount-selector .selection {
+    /* border: 1px solid black; */
+    width: 10.3em;
+    height: 3.25em;
+    position: absolute;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #2845D3, #7B8DE8);
+    transition: left .3s ease;
+}
+
+.selectpg .regcount-selector .base span {
     /* border: 1px dotted red; */
     width: 100%;
     text-align: center;
     padding: 12px 16px;
     font-size: 1.15em;
-    font-weight: 300;
+    font-weight: 400;
+    cursor: pointer;
+}
+.selectpg .regcount-selector .base #region, #county{
+    z-index: 2;
+}
+
+.selectpg .regcount-selector .selection.left {
+  left: 0;
+}
+
+.selectpg .regcount-selector .selection.right {
+  left: 50%;
+}
+
+.regcount-selector.left #region {
+  color: white;
+  transition: color 0.15s ease;
+}
+
+.regcount-selector.left #county {
+  color: black;
+  transition: color 0.15s ease;
+}
+
+.regcount-selector.right #region {
+  color: black;
+  transition: color 0.15s ease;
+}
+
+.regcount-selector.right #county {
+  color: white;
+  transition: color 0.15s ease;
 }
 
 .selectpg #searchbox {
@@ -52,12 +95,56 @@
     border-radius: 10px;
 }
 
-.selectpg .options {
+.selectpg .left-options {
     margin-top: 1.5em;
-    /* border: 1px solid black; */
+    /* height: 78%;
+    border: 1px solid black; */
 }
 
-.selectpg .options div {
+.selectpg .left-options div {
+    margin: 0.3em 0;
+    padding: 0.8em 1.5em;;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: rgba(247, 247, 247, 0.75);
+    color: #555555;
+    border-radius: 10px;
+}
+
+.selectpg .left-options .option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+}
+
+.selectpg .left-options .title {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.selectpg .left-options .title h3 {
+    font-weight: 400;
+}
+
+.selectpg .left-options .title p {
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-top: 2px;
+}
+
+.selectpg .left-options #nextsym {
+    /* border: 1px solid black; */
+    font-weight: 500;
+    padding: 0;
+}
+
+.selectpg .right-options {
+    margin-top: 1.5em;
+}
+
+.selectpg .right-options div {
     margin: 0.5em 0;
     padding: 1em 0.5em;;
     font-size: 1.2em;
