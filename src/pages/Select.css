@@ -101,7 +101,7 @@
     border: 1px solid black; */
 }
 
-.selectpg .left-options div {
+.selectpg .left-options .option {
     margin: 0.3em 0;
     padding: 0.8em 1.5em;;
     font-size: 1.2em;
@@ -109,12 +109,10 @@
     background-color: rgba(247, 247, 247, 0.75);
     color: #555555;
     border-radius: 10px;
-}
-
-.selectpg .left-options .option {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.8em;
+    text-decoration: none;
 }
 
 .selectpg .left-options .title {
@@ -142,6 +140,7 @@
 
 .selectpg .right-options {
     margin-top: 1.5em;
+    text-decoration: none;
 }
 
 .selectpg .right-options div {

@@ -1,0 +1,133 @@
+.optionpg {
+    background-color: #F1F1F1;
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.optionpg * {
+    margin: 0 auto;
+}
+
+.optionpg .searchbar {
+    display: flex;
+    justify-content: start;
+    background: linear-gradient(90deg, #2845D3, #7B8DE8);
+    width: 45%;
+    padding: 1em 3em;
+    border: 0.5px solid rgba(40, 69, 211, 0.5);
+    border-radius: 8px;
+    margin: 2em auto 0 auto;
+    box-shadow: 2px 4px 8px 0.1px #7B8DE8;
+}
+
+.optionpg .searchbar #search-icon {
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+.optionpg .searchbar label {
+    width: 100%;
+}
+
+.optionpg .searchbar #searchbox {
+    background-color: transparent;
+    font-size: 1.2em;
+    border: none;
+    width: 95%;
+    color: #F1F1F1;
+}
+
+.optionpg .searchbar #searchbox::placeholder {
+    color: #F1F1F1;
+    opacity: 0.8;
+}
+
+.optionpg .mainbox-container {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 45%;
+    margin-top: 2.6em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1em;
+}
+
+.optionpg .mainbox-container .box {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.optionpg .mainbox-container .box h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 4.8em;
+}
+
+.optionpg .mainbox-container #employment {
+    background: linear-gradient(360deg, #DFB189 0%, #E7C7AB 60%, #F3E7DC 100%);
+    border: rgba(223, 177, 137, 0.5);
+    box-shadow: 2px 1px 10px 0.3px #DFB189;
+}
+
+.optionpg .mainbox-container img {
+    position: absolute;
+    width: 9.2em;
+    height: auto;
+    margin-left: -2.2em;
+    margin-top: -2.5em;
+}
+
+.optionpg .mainbox-container #suitcase-img {
+    margin-left: -2em;
+    margin-top: -2.2em;
+}
+
+.optionpg .mainbox-container #housing {
+    background: linear-gradient(360deg, #F1BFA8 0%, #EE997B 27%, #EE997B 100%);
+    border: rgba(238, 140, 108, 0.5);
+    box-shadow: 2px 1px 10px 0.3px #EE8C6C;
+}
+.optionpg .mainbox-container #education {
+    background: linear-gradient(360deg, #94B3E9 0%, #6A89DF 32%, #5574DA 100%);
+    border: rgba(40, 69, 211, 0.5);
+    box-shadow: 2px 1px 10px 0.3px #6479E2;
+}
+.optionpg .mainbox-container #transportation {
+    background: linear-gradient(360deg, #54C6D0 0%, #73D0D7 51%, #DCF3F1 100%);
+    border: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 1px 10px 0.5px #73D0D7;
+}
+
+.optionpg .mainbox-second-container {
+    margin-top: 1.15em;
+    width: 48%;
+    height: 30%;
+    display: block;
+}
+
+.optionpg .mainbox-second-container .box {
+    background: linear-gradient(90deg, #FFFFFF 0%, #F3F2F2 84%, #EEEEEE 100%);
+    border: 0.5px solid rgba(191, 191, 191, 0.5);
+    border-radius: 8px;
+    height: 30%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 1px 8px 0.1px #DDDDDD;
+}
+.optionpg .mainbox-second-container .box img {
+    width: 3em;
+    height: 3em;
+    margin-left: 1em;
+}
+
+.optionpg .mainbox-second-container .box h3 {
+    font-size: 1.15em;
+    font-weight: 400;
+    color: #363636;
+    width: 40%;
+    margin-left: -45%;
+}

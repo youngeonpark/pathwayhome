@@ -3,6 +3,7 @@ import house from '../assets/images/house.png';
 import { Routes, Route, Link } from 'react-router-dom'
 import About from './About.jsx'
 import Select from './Select.jsx'
+import Options from './Options.jsx'
 import './App.css'
 
 
@@ -33,7 +34,7 @@ function App() {
                   <div className="inside-container">
                     <h3>Start now with new beginnings</h3>
 
-                    <Link to="/select">
+                    <Link to="/about">
                       <button id="start-btn">start here</button>
                     </Link>
                   </div>
@@ -45,7 +46,8 @@ function App() {
           }
         />
         <Route path="/select" element={<Select />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/options" element={<Options />} />
       </Routes>
     </>
   )
