@@ -5,7 +5,7 @@ import App from './pages/App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename='/pathwayhome'>
     <App />
   </BrowserRouter>
 )
